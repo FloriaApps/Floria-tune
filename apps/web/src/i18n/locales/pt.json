@@ -1,0 +1,129 @@
+{
+  "common": {
+    "loading": "Carregando...",
+    "cancel": "Cancelar",
+    "create": "Criar",
+    "close": "Fechar",
+    "playAll": "Tocar tudo",
+    "nothingHere": "Nada por aqui ainda.",
+    "tracksCount": "{n} faixa | {n} faixas",
+    "albumsCount": "{n} álbum | {n} álbuns"
+  },
+  "nav": {
+    "library": "Biblioteca",
+    "favorites": "Favoritos",
+    "genres": "Gêneros",
+    "search": "Buscar",
+    "playlists": "Playlists",
+    "settings": "Ajustes"
+  },
+  "sidebar": {
+    "tagline": "tocando via Navidrome",
+    "resizeHint": "Arraste para redimensionar · duplo clique para o tamanho padrão"
+  },
+  "login": {
+    "subtitle": "Conecte-se ao seu servidor Navidrome",
+    "serverUrl": "Endereço do servidor",
+    "serverUrlPlaceholder": "https://musica.meudominio.com",
+    "username": "Usuário",
+    "password": "Senha",
+    "signIn": "Entrar",
+    "connecting": "Conectando..."
+  },
+  "library": {
+    "title": "Biblioteca",
+    "subtitle": "O que rolar de novo por aqui",
+    "playRandom": "Tocar aleatório",
+    "resumeLabel": "Continuar de onde parou",
+    "newest": "Últimos lançamentos",
+    "recentlyPlayed": "Tocados recentemente",
+    "random": "Aleatório"
+  },
+  "artist": {
+    "albumsCount": "{n} álbum | {n} álbuns"
+  },
+  "album": {
+    "label": "Álbum",
+    "play": "Tocar álbum"
+  },
+  "playlists": {
+    "title": "Playlists",
+    "new": "Nova playlist",
+    "namePlaceholder": "Nome da playlist",
+    "empty": "Você ainda não tem playlists neste servidor."
+  },
+  "playlist": {
+    "label": "Playlist",
+    "delete": "Excluir playlist",
+    "confirmDelete": "Confirmar exclusão"
+  },
+  "search": {
+    "placeholder": "Buscar artistas, álbuns ou músicas",
+    "searching": "Buscando...",
+    "artists": "Artistas",
+    "albums": "Álbuns",
+    "songs": "Músicas",
+    "noResults": "Nada encontrado para \"{query}\"."
+  },
+  "settings": {
+    "title": "Ajustes",
+    "appearance": "Aparência",
+    "appearanceDesc": "Escolha a paleta de cores do Floria Tune.",
+    "language": "Idioma",
+    "languageDesc": "Escolha o idioma de exibição do app.",
+    "playback": "Reprodução",
+    "playbackDesc": "Qualidade do áudio transmitido pelo servidor (via maxBitRate da OpenSubsonic).",
+    "quality": {
+      "auto": "Automático",
+      "autoHint": "o servidor decide (recomendado)",
+      "kbpsHint128": "economiza dados",
+      "kbpsHint192": "equilíbrio",
+      "kbpsHint320": "melhor qualidade"
+    },
+    "account": "Conta",
+    "server": "Servidor",
+    "username": "Usuário",
+    "signOut": "Sair",
+    "about": "Sobre",
+    "aboutText": "Floria Tune — cliente Navidrome/OpenSubsonic."
+  },
+  "favorites": {
+    "title": "Favoritos",
+    "subtitle": "Tudo que você marcou com ♥",
+    "empty": "Você ainda não favoritou nada. Toque no ♥ em qualquer música, álbum ou artista."
+  },
+  "genres": {
+    "title": "Gêneros",
+    "subtitle": "Navegue pela sua biblioteca por estilo musical",
+    "empty": "Seu servidor ainda não tem gêneros indexados.",
+    "label": "Gênero",
+    "playMix": "Tocar mix",
+    "noAlbums": "Nenhum álbum encontrado para esse gênero."
+  },
+  "player": {
+    "nothingPlaying": "Nada tocando",
+    "shuffle": "Aleatório",
+    "repeat": "Repetir",
+    "viewQueue": "Ver fila",
+    "mute": "Mudo",
+    "unmute": "Ativar som"
+  },
+  "nowPlaying": {
+    "lyrics": "Letra",
+    "queueCount": "Fila ({n})",
+    "loadingLyrics": "Carregando letra...",
+    "noLyrics": "Letra não disponível para esta música.",
+    "emptyQueue": "Fila vazia."
+  },
+  "star": {
+    "add": "Adicionar aos favoritos",
+    "remove": "Remover dos favoritos"
+  },
+  "trackRow": {
+    "removeFromPlaylist": "Remover da playlist"
+  },
+  "addToPlaylist": {
+    "trigger": "Adicionar à playlist",
+    "empty": "Nenhuma playlist ainda."
+  }
+}

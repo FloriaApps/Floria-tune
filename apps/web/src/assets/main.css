@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /*
+   * Paleta de cada tema, como triplas "R G B" (sem vírgula) — é o formato
+   * que o Tailwind espera para poder compor `rgb(var(--x) / <alpha-value>)`
+   * e assim manter os modificadores de opacidade (bg-ink-900/50 etc.)
+   * funcionando em qualquer tema. Trocar de tema é só trocar o atributo
+   * `data-theme` na tag <html> (feito pela store de UI).
+   *
+   * O `:root` sem seletor de atributo é o tema padrão/principal do app —
+   * atualmente o Monochrome (preto e branco puro). Isso também evita o
+   * "flash" do tema errado antes do JS aplicar o data-theme salvo: mesmo
+   * sem nenhum JS rodar ainda, a página já nasce com a paleta certa.
+   */
+  :root {
+    /* Monochrome (padrão) — só preto, branco e cinza, sem matiz nenhuma */
+    --color-ink-950: 8 8 8;
+    --color-ink-900: 20 20 20;
+    --color-ink-800: 36 36 36;
+    --color-paper-100: 230 230 230;
+    --color-paper-400: 130 130 130;
+    --color-gold-400: 255 255 255;
+    --color-gold-500: 200 200 200;
+    --color-moss-500: 110 110 110;
+  }
+
+  :root[data-theme="floria"] {
+    /* Floria — vinil escuro com acento dourado */
+    --color-ink-950: 21 19 15;
+    --color-ink-900: 30 27 22;
+    --color-ink-800: 42 38 32;
+    --color-paper-100: 241 236 225;
+    --color-paper-400: 143 136 122;
+    --color-gold-400: 212 162 76;
+    --color-gold-500: 185 138 60;
+    --color-moss-500: 74 93 78;
+  }
+
+  :root[data-theme="gruvbox"] {
+    --color-ink-950: 40 40 40;
+    --color-ink-900: 60 56 54;
+    --color-ink-800: 80 73 69;
+    --color-paper-100: 235 219 178;
+    --color-paper-400: 168 153 132;
+    --color-gold-400: 254 128 25;
+    --color-gold-500: 214 93 14;
+    --color-moss-500: 142 192 124;
+  }
+
+  :root[data-theme="nord"] {
+    --color-ink-950: 46 52 64;
+    --color-ink-900: 59 66 82;
+    --color-ink-800: 67 76 94;
+    --color-paper-100: 236 239 244;
+    --color-paper-400: 129 161 193;
+    --color-gold-400: 136 192 208;
+    --color-gold-500: 94 129 172;
+    --color-moss-500: 163 190 140;
+  }
+
+  :root[data-theme="dracula"] {
+    --color-ink-950: 40 42 54;
+    --color-ink-900: 68 71 90;
+    --color-ink-800: 85 87 107;
+    --color-paper-100: 248 248 242;
+    --color-paper-400: 149 158 197;
+    --color-gold-400: 189 147 249;
+    --color-gold-500: 255 121 198;
+    --color-moss-500: 80 250 123;
+  }
+
+  :root[data-theme="solarized"] {
+    --color-ink-950: 0 43 54;
+    --color-ink-900: 7 54 66;
+    --color-ink-800: 10 65 82;
+    --color-paper-100: 147 161 161;
+    --color-paper-400: 101 123 131;
+    --color-gold-400: 181 137 0;
+    --color-gold-500: 203 75 22;
+    --color-moss-500: 38 139 210;
+  }
+
+  html,
+  body,
+  #app {
+    height: 100%;
+  }
+  body {
+    @apply bg-ink-950 text-paper-100 font-sans antialiased transition-colors duration-300;
+  }
+  ::selection {
+    @apply bg-gold-400/30;
+  }
+  /* Barra de rolagem discreta, combinando com o tema escuro */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-ink-800 rounded-full;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}

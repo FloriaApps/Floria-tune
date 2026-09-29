@@ -1,0 +1,23 @@
+{
+  "name": "floria-tune",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "pnpm --filter @floria-tune/web dev",
+    "build": "pnpm --filter @floria-tune/web build",
+    "build:packages": "pnpm --filter=./packages/* run build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "desktop": "pnpm --filter @floria-tune/desktop tauri dev",
+    "desktop:build": "pnpm --filter @floria-tune/desktop tauri build"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.1.4",
+    "@vue/test-utils": "^2.4.6",
+    "jsdom": "^25.0.1",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.4",
+    "vue": "^3.5.12"
+  },
+  "packageManager": "pnpm@9.12.0"
+}

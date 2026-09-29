@@ -1,0 +1,129 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "cancel": "Cancel",
+    "create": "Create",
+    "close": "Close",
+    "playAll": "Play all",
+    "nothingHere": "Nothing here yet.",
+    "tracksCount": "{n} track | {n} tracks",
+    "albumsCount": "{n} album | {n} albums"
+  },
+  "nav": {
+    "library": "Library",
+    "favorites": "Favorites",
+    "genres": "Genres",
+    "search": "Search",
+    "playlists": "Playlists",
+    "settings": "Settings"
+  },
+  "sidebar": {
+    "tagline": "streaming via Navidrome",
+    "resizeHint": "Drag to resize · double-click to reset"
+  },
+  "login": {
+    "subtitle": "Connect to your Navidrome server",
+    "serverUrl": "Server address",
+    "serverUrlPlaceholder": "https://music.example.com",
+    "username": "Username",
+    "password": "Password",
+    "signIn": "Sign in",
+    "connecting": "Connecting..."
+  },
+  "library": {
+    "title": "Library",
+    "subtitle": "What's new around here",
+    "playRandom": "Shuffle play",
+    "resumeLabel": "Resume where you left off",
+    "newest": "New releases",
+    "recentlyPlayed": "Recently played",
+    "random": "Random"
+  },
+  "artist": {
+    "albumsCount": "{n} album | {n} albums"
+  },
+  "album": {
+    "label": "Album",
+    "play": "Play album"
+  },
+  "playlists": {
+    "title": "Playlists",
+    "new": "New playlist",
+    "namePlaceholder": "Playlist name",
+    "empty": "You don't have any playlists on this server yet."
+  },
+  "playlist": {
+    "label": "Playlist",
+    "delete": "Delete playlist",
+    "confirmDelete": "Confirm delete"
+  },
+  "search": {
+    "placeholder": "Search artists, albums or songs",
+    "searching": "Searching...",
+    "artists": "Artists",
+    "albums": "Albums",
+    "songs": "Songs",
+    "noResults": "Nothing found for \"{query}\"."
+  },
+  "settings": {
+    "title": "Settings",
+    "appearance": "Appearance",
+    "appearanceDesc": "Choose Floria Tune's color palette.",
+    "language": "Language",
+    "languageDesc": "Choose the app's display language.",
+    "playback": "Playback",
+    "playbackDesc": "Streaming audio quality from the server (via OpenSubsonic's maxBitRate).",
+    "quality": {
+      "auto": "Automatic",
+      "autoHint": "server decides (recommended)",
+      "kbpsHint128": "saves data",
+      "kbpsHint192": "balanced",
+      "kbpsHint320": "best quality"
+    },
+    "account": "Account",
+    "server": "Server",
+    "username": "Username",
+    "signOut": "Sign out",
+    "about": "About",
+    "aboutText": "Floria Tune — a Navidrome/OpenSubsonic client."
+  },
+  "favorites": {
+    "title": "Favorites",
+    "subtitle": "Everything you've marked with a ♥",
+    "empty": "You haven't favorited anything yet. Tap the ♥ on any song, album or artist."
+  },
+  "genres": {
+    "title": "Genres",
+    "subtitle": "Browse your library by musical style",
+    "empty": "Your server doesn't have any indexed genres yet.",
+    "label": "Genre",
+    "playMix": "Play mix",
+    "noAlbums": "No albums found for this genre."
+  },
+  "player": {
+    "nothingPlaying": "Nothing playing",
+    "shuffle": "Shuffle",
+    "repeat": "Repeat",
+    "viewQueue": "View queue",
+    "mute": "Mute",
+    "unmute": "Unmute"
+  },
+  "nowPlaying": {
+    "lyrics": "Lyrics",
+    "queueCount": "Queue ({n})",
+    "loadingLyrics": "Loading lyrics...",
+    "noLyrics": "No lyrics available for this song.",
+    "emptyQueue": "Queue is empty."
+  },
+  "star": {
+    "add": "Add to favorites",
+    "remove": "Remove from favorites"
+  },
+  "trackRow": {
+    "removeFromPlaylist": "Remove from playlist"
+  },
+  "addToPlaylist": {
+    "trigger": "Add to playlist",
+    "empty": "No playlists yet."
+  }
+}

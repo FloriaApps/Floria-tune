@@ -11,18 +11,24 @@ const props = defineProps<{
 
 const auth = useAuthStore();
 const coverUrl = computed(() =>
-  props.coverArt && auth.api ? auth.api.coverArtUrl(props.coverArt, 300) : null,
+  props.coverArt && auth.api ? auth.api.coverArtUrl(props.coverArt, 200) : null,
 );
 </script>
 
 <template>
   <RouterLink :to="to" class="group block w-40">
-    <div class="aspect-square w-40 overflow-hidden rounded-xl bg-ink-800 shadow-lg shadow-black/20 ring-1 ring-white/5">
+    <div
+      class="aspect-square w-40 overflow-hidden rounded-xl bg-ink-800 ring-1 ring-white/10 transition-shadow group-hover:ring-gold-400/50"
+    >
       <img
         v-if="coverUrl"
         :src="coverUrl"
         alt=""
-        class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+        width="160"
+        height="160"
+        loading="lazy"
+        decoding="async"
+        class="h-full w-full object-cover"
       />
       <div v-else class="flex h-full w-full items-center justify-center text-paper-400">
         <span class="font-display text-3xl">{{ title.charAt(0) }}</span>

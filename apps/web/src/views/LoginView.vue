@@ -3,9 +3,9 @@ import { ref } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import { useAuthStore } from "@floria-tune/store";
 
-const url = ref("");
-const username = ref("");
-const password = ref("");
+const url = ref(import.meta.env.VITE_NAVIDROME_URL ?? "");
+const username = ref(import.meta.env.VITE_NAVIDROME_USER ?? "");
+const password = ref(import.meta.env.VITE_NAVIDROME_PASS ?? "");
 const loading = ref(false);
 
 const auth = useAuthStore();
@@ -28,9 +28,9 @@ async function onSubmit() {
 
 <template>
   <div class="flex h-screen items-center justify-center px-6">
-    <div
-      class="w-full max-w-sm rounded-2xl border border-white/10 bg-ink-900/50 p-8 shadow-2xl shadow-black/40 backdrop-blur-2xl"
-    >
+      <div
+        class="w-full max-w-sm rounded-2xl border border-white/10 bg-ink-900/80 p-8 shadow-xl shadow-black/30"
+      >
       <p class="font-display text-3xl text-paper-100">Floria Tune</p>
       <p class="mt-1.5 text-sm text-paper-400">{{ $t("login.subtitle") }}</p>
 
